@@ -1,0 +1,5 @@
+
+CREATE TABLE perfil (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  nombre VARCHAR(50)
+);
