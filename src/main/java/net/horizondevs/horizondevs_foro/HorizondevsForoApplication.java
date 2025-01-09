@@ -9,5 +9,4 @@ public class HorizondevsForoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(HorizondevsForoApplication.class, args);
 	}
-
 }
