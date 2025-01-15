@@ -1,4 +1,4 @@
-package net.horizondevs.horizondevs_foro.respuesta;
+package net.horizondevs.horizondevs_foro.dominio.respuesta;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

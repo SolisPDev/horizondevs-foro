@@ -1,4 +1,4 @@
-package net.horizondevs.horizondevs_foro.perfil;
+package net.horizondevs.horizondevs_foro.dominio.perfil;
 
 import jakarta.persistence.*;
 

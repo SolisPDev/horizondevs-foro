@@ -1,8 +1,8 @@
-package net.horizondevs.horizondevs_foro.respuesta;
+package net.horizondevs.horizondevs_foro.dominio.respuesta;
 
 import jakarta.persistence.*;
-import net.horizondevs.horizondevs_foro.topico.Topico;
-import net.horizondevs.horizondevs_foro.usuario.Usuario;
+import net.horizondevs.horizondevs_foro.dominio.topico.Topico;
+import net.horizondevs.horizondevs_foro.dominio.usuario.Usuario;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.util.Date;

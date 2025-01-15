@@ -1,14 +1,20 @@
-package net.horizondevs.horizondevs_foro.topico;
+package net.horizondevs.horizondevs_foro.dominio.topico;
 
 import jakarta.persistence.*;
-import net.horizondevs.horizondevs_foro.curso.Curso;
-import net.horizondevs.horizondevs_foro.usuario.Usuario;
+import lombok.*;
+import net.horizondevs.horizondevs_foro.dominio.curso.Curso;
+import net.horizondevs.horizondevs_foro.dominio.usuario.Usuario;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.util.Date;
 
-@Entity
+@Entity(name="topico")
 @Table(name = "topico")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode(of = "id")
 public class Topico {
 
     @Id
@@ -21,7 +27,7 @@ public class Topico {
     @Column(columnDefinition = "TEXT")
     private String mensaje;
 
-    @Column(nullable = false, updatable = false)
+    @Column(nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
     @CreationTimestamp
     private Date fechaCreacion;
@@ -37,5 +43,6 @@ public class Topico {
     @JoinColumn(name = "id_curso")
     private Curso curso;
 
-    // Getters y setters
+    public Topico(DatosRegistroTopico datosRegistroTopico, String nombre) {
+    }
 }

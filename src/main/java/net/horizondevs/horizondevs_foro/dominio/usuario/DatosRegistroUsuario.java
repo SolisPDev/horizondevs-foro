@@ -1,6 +1,6 @@
-package net.horizondevs.horizondevs_foro.usuario;
+package net.horizondevs.horizondevs_foro.dominio.usuario;
 
-import net.horizondevs.horizondevs_foro.perfil.Perfil;
+import net.horizondevs.horizondevs_foro.dominio.perfil.Perfil;
 
 public record DatosRegistroUsuario(
         String nombre,
